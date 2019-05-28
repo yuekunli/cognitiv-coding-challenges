@@ -170,7 +170,12 @@ either of the two people (that'll be the user's responsibility), and compare jus
 with other people. This endpoint is allowed to fail for any reason. The obvious example is
 when the chromosome for the person in question has an insufficient number of telomere
 sequences to establish where the "start" is. Scientists can fall back on the full Person
-to Person comparison for these samples.
+to Person comparison for these samples. It should also return a collection of areas with
+differences.
+
+This will be compiled with gcc 8 on Linux with `-fconcepts`. Ideally, it only relies on
+the C++ standard library but header only libraries in-source where licensing allows will
+still be accepted.
 
 ## How to submit
 
