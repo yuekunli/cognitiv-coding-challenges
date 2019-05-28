@@ -235,7 +235,7 @@ ignoring those in the name of a coding exercise.
 
 If you are interested in sample data and more information about how the industry
 really handles this stuff (which looks nothing like this exercise) check out
-[http://www.internationalgenome.org/](The 1000 Genome project)
+[The 1000 Genome Project](http://www.internationalgenome.org/)
 
 
 
