@@ -165,17 +165,19 @@ which will always be 23 for the available data. This should only fail if the dat
 conform to the specification above. The output should be a collection highlighting the
 interesting distinctions between the two people, considering all of the details above.
 
-The other thing we need to be able to do is to extract *one* of the sequences found above from
-either of the two people (that'll be the user's responsibility), and compare just that section
-with other people. This endpoint is allowed to fail for any reason. The obvious example is
-when the chromosome for the person in question has an insufficient number of telomere
-sequences to establish where the "start" is. Scientists can fall back on the full Person
-to Person comparison for these samples. It should also return a collection of areas with
-differences.
+The other thing we need to be able to do is to extract *one* of the sub-sequences found 
+in the above process from either of the two people (that'll be the user's responsibility 
+to go back and read the actual sequence as long as you provide a range for them to do
+so from), and compare just that section with other people. This endpoint is allowed to 
+fail for any reason. The obvious example is when the chromosome for the person in question 
+has an insufficient number of telomere sequences to establish where the "start" is.
+Scientists can fall back on the full Person to Person comparison for these samples. 
+It should also return a collection of areas with differences, just like the first API.
 
 This will be compiled with gcc 8 on Linux with `-fconcepts`. Ideally, it only relies on
-the C++ standard library but header only libraries in-source where licensing allows will
-still be accepted.
+the C++ standard library but header only libraries that are included in-source 
+will still be accepted (where licensing permits, it's not proprietary per se but 
+closed source on account of submissions not being published).
 
 ## How to submit
 
@@ -183,8 +185,9 @@ Check out the git repo and add tests for your code in the test directory. The te
 use [Catch2](https://github.com/catchorg/Catch2) as the testing framework. You are
 free to add as many test support files (including implementation of concepts) as needed.
 
-Keep the actual tests simple. We will create additional tests using your tests as a basis
-that run the process on real genomes that were manipulated for edge cases.
+Keep the actual tests simple (fixtures and support code doesn't need to be as simple though).
+We will create additional tests using your tests as a basis that run the process on real
+genomes that were manipulated for edge cases.
 
 ### Rubric
 
