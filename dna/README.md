@@ -128,7 +128,7 @@ different genetic genders, we will only look at the first 22 chromosomes. Of cou
 it's not immediately obvious what we're looking at until we inspect that 23rd chromosome.
 
 For this, it is sufficient to just look at the size of the chromosome. An X chromosome
-has about 156 million base pairs. A Y chromosome is cluster to 57 million. There's enough
+has about 156 million base pairs. A Y chromosome is closer to 57 million. There's enough
 wiggle room there to decidedly recognize when you have a mismatch on chromosome 23.
 
 Each chromosome is of a different length ranging from about 46 million base pairs to about
