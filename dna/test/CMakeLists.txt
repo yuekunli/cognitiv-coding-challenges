@@ -7,4 +7,4 @@ set(TESTS
 )
 
 add_executable(dna_test ${TESTS} main.cpp)
-target_include_directories(dna_test PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/..")
+target_link_libraries(dna_test cogdna)

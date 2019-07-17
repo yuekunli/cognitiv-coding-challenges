@@ -20,6 +20,31 @@ static constexpr base C = base::cytosine;
 static constexpr base G = base::guanine;
 static constexpr base T = base::thymine;
 
+constexpr char to_char(base value)
+{
+	switch (value)
+	{
+		case base::thymine:
+			return 'T';
+		case base::guanine:
+			return 'G';
+		case base::cytosine:
+			return 'C';
+		default:
+			return 'A';
+	}
+}
+
+constexpr std::byte complement_packed(std::byte packed)
+{
+	return packed ^ static_cast<std::byte>(0);
+}
+
+constexpr base complement(enum base base)
+{
+	return static_cast<enum base>(complement_packed(static_cast<std::byte>(base)) & static_cast<std::byte>(0x03));
+}
+
 constexpr std::byte pack(base first, base second, base third, base fourth)
 {
 	return (static_cast<std::byte>(first) << 6) |
