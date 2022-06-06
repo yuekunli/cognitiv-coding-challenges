@@ -20,6 +20,9 @@ static constexpr base C = base::cytosine;
 static constexpr base G = base::guanine;
 static constexpr base T = base::thymine;
 
+const base telo[6] = { dna::T, dna::T, dna::A, dna::G, dna::G, dna::G };
+	
+	
 constexpr char to_char(base value)
 {
 	switch (value)
