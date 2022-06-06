@@ -1,9 +1,8 @@
 #include "catch.hpp"
 #include "fake_person.hpp"
-#include <person.hpp>
 #include <iostream>
 
-template<dna::Person P>
+template<class P>
 class person_tester
 {
 	std::reference_wrapper<std::ostream> writer_;
@@ -130,6 +129,6 @@ TEST_CASE("Fake person fulfills Person concept", "[stream]")
 	});
 
 	person_tester<fake_person> tester(std::cout, person);
-	tester.dump_chromosomes();
+	//tester.dump_chromosomes();
 }
 
