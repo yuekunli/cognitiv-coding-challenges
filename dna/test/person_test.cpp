@@ -49,8 +49,8 @@ TEST_CASE()
 	data[1] = dna::pack(dna::G, dna::G, dna::G, dna::T);
 
 	data[511] = dna::pack(dna::G, dna::G, dna::G, dna::A);
-													// |
-													// doesn't match the start of a telomere
+                                                        // |
+                                                        // doesn't match the start of a telomere
 
 	int k = 1;
 	for (int i = 2; i <= 510; i++)
