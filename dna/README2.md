@@ -1,4 +1,8 @@
-##What I did##
+What I did
+===============
+
+
+# Functionalities
 
 I wrote some code for 2 functionalities.
 (1). find the number of bases that form the padding sequence at the beginning of a helix stream.
@@ -19,12 +23,15 @@ These two functionalities are implemented in file person.hpp.
 (I'm being lazy here because I put class' implementation in header file, this header file so far is only included in one .cpp file so it kind of works,
 but it's bad practice.)
 
+# Tests
 
 There are 6 TEST_CASEs in the person_test.hpp file.
 Each of the first 4 TEST_CASEs has only 1 REQUIRE statement.
 Each of the last 2 TEST_CASEs has 600 REQUIRE statement (or say REQUIRE is run 600 times).
 There are 1204 test cases in total.
 
+
+# Workarounds
 
 I also had to delete all the C++20 concept and constraints code because I had a hard time passing compilation in Visual Studio even when I set the language standard to C++20.
 
