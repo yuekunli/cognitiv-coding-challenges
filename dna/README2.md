@@ -1,4 +1,4 @@
-What I did
+##What I did##
 
 I wrote some code for 2 functionalities.
 (1). find the number of bases that form the padding sequence at the beginning of a helix stream.
@@ -25,3 +25,8 @@ Each of the first 4 TEST_CASEs has only 1 REQUIRE statement.
 Each of the last 2 TEST_CASEs has 600 REQUIRE statement (or say REQUIRE is run 600 times).
 There are 1204 test cases in total.
 
+
+I also had to delete all the C++20 concept and constraints code because I had a hard time passing compilation in Visual Studio even when I set the language standard to C++20.
+
+
+I could've added a lot more comments in both person.hpp and person_test.cpp. But I have to turn it in the way it is due to time limit. I'm happy to discuss my thoughts if folks at Cognitiv find my code interesting at all.
